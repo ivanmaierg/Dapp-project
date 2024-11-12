@@ -125,7 +125,7 @@ const Trident = () => {
                     {navigation.map(item => (
                         <Menu as="div" key={item.title} className="relative inline-block text-left font-semibold xl:mr-10">
                             <div>
-                                <Menu.Button className=" py-2.5 text-sm leading-5 w-24 xl:w-full text-center  rounded-lg text-base font-medium text-gray-100
+                                <Menu.Button className=" py-2.5 text-sm leading-5 w-24 xl:w-full text-center  rounded-lg font-medium text-gray-100
                                   focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-center">
                                     {item.title}      <div><i className="fa fa-angle-down ml-2" aria-hidden="true"></i></div>
                                 </Menu.Button>
@@ -163,7 +163,7 @@ const Trident = () => {
                         {TestNavigation.map(item => (
                             <Link key={item.name} href={item.href}>
                                 {/* <a  className="relative inline-block text-left font-semibold  w-24 xl:w-full text-center"> */}
-                                <div className=" py-2.5 text-sm leading-5  rounded-lg text-base font-medium text-gray-100
+                                <div className=" py-2.5 text-sm leading-5  rounded-lg font-medium text-gray-100
                                   focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-center">
                                     {item.name}
                                     {/* </a> */}
@@ -341,7 +341,7 @@ const Header = () => {
                                             Ethereum
                                         </div>
                                     </div>
-                                    <button onClick={accountConfig} className=" bg-neutral-700 rounded-full truncate  w-40 px-4 py-2 text-white rounded-lg  flex  ">
+                                    <button onClick={accountConfig} className=" bg-neutral-700 truncate  w-40 px-4 py-2 text-white rounded-lg  flex  ">
                                         {walletAddress}
                                     </button>
                                 </div>
@@ -355,7 +355,7 @@ const Header = () => {
                                             Substrate
                                         </div>
                                     </div>
-                                    <button onClick={accountConfig} className=" bg-neutral-700 rounded-full truncate  w-40 px-4 py-2 text-white rounded-lg  flex  ">
+                                    <button onClick={accountConfig} className=" bg-neutral-700 truncate  w-40 px-4 py-2 text-white rounded-lg flex  ">
                                         {walletAddress}
                                     </button>
                                 </div>
@@ -376,7 +376,7 @@ const Header = () => {
                         >
                             <Popover.Panel
                                 focus
-                                className="absolute my-auto  fixed z-20 inset-x-0  min-h-screen  inset-y-auto    transition transform origin-top-right xl:hidden"
+                                className="absolute my-auto z-20 inset-x-0  min-h-screen  inset-y-auto    transition transform origin-top-right xl:hidden"
                             >
                                 <div className="rounded-lg  shadow-lg ring-1 ring-black ring-opacity-5 bg-black    transition duration-700 divide-y-2 divide-gray-400">
                                     <div className="pt-5 pb-6 px-5">
