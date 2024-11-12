@@ -1,15 +1,13 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import { Dialog, Listbox, Menu, Popover, Tab, Transition } from '@headlessui/react'
+import { Listbox, Menu, Popover, Tab, Transition } from '@headlessui/react'
 import { CheckIcon, MenuIcon, SelectorIcon, XIcon } from '@heroicons/react/solid'
 import Link from "next/link";
-import SelectTokenTail from "../selecttokentail";
-import SelectTokenTop from "../selecttokentop";
 import {
     AccountChooseValue,
     WalletButtonShowState,
     WalletListShowState,
     AccountConfigPageState,
-    WalletAddress, NetWorkState, Token_Lists, IntactWalletAddress
+    WalletAddress, NetWorkState, IntactWalletAddress
 } from '../../jotai';
 import { useAtom } from 'jotai';
 import { useRouter } from 'next/router';
@@ -18,7 +16,7 @@ import Account from "../account";
 import TokenList from "../token_lists";
 import { address_slice } from '../../utils/chain/address';
 
-
+import Image from 'next/image';
 
 
 function classNames(...classes) {
@@ -301,7 +299,9 @@ const Header = () => {
                                 <Link href="/home">
                                     {/* <a> */}
                                     <span className="sr-only">Workflow</span>
-                                    <img
+                                    <Image
+                                        width={10}
+                                        height={10}
                                         className="w-auto h-14   "
                                         src="/web3logo.svg"
                                         alt=""
@@ -335,7 +335,9 @@ const Header = () => {
                             <div className={WalletButtonShow && AccountChoose == 1 ? "" : "hidden"}>
                                 <div className="flex bg-neutral-800 rounded-full p-1 justify-center">
                                     <div className="flex items-center mr-4 p-2">
-                                        <img className="w-6 h-6 rounded-lg mx-1"
+                                        <Image
+                                            width={10}
+                                            height={10} className="w-6 h-6 rounded-lg mx-1"
                                             src='https://portal.web3games.org/_next/image?url=%2Fnetworks%2Fethereum-network.jpg&w=48&q=75' alt='' />
                                         <div className=" text-white w-16">
                                             Ethereum
@@ -349,7 +351,9 @@ const Header = () => {
                             <div className={WalletButtonShow && AccountChoose == 2 ? "" : "hidden"}>
                                 <div className="flex bg-neutral-800 rounded-full p-1 justify-center">
                                     <div className="flex items-center mr-4 p-2">
-                                        <img className="w-6 h-6 rounded-lg mx-1"
+                                        <Image
+                                            width={10}
+                                            height={10} className="w-6 h-6 rounded-lg mx-1"
                                             src='/substrate.svg' alt='' />
                                         <div className=" text-white w-16">
                                             Substrate
@@ -382,7 +386,9 @@ const Header = () => {
                                     <div className="pt-5 pb-6 px-5">
                                         <div className="flex items-center justify-between">
                                             <div>
-                                                <img
+                                                <Image
+                                                    width={10}
+                                                    height={10}
                                                     className="h-10 w-auto"
                                                     src='/logo.png'
                                                     alt="Workflow"
