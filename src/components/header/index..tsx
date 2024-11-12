@@ -121,12 +121,12 @@ const Trident = () => {
     if (selected) {
         return (
             <div className="">
-                <div className="xl:flex justify-center grid grid-cols-3 md:grid-cols-5  ">
+                <div className="xl:flex justify-start grid grid-cols-3 md:grid-cols-5  ">
                     {navigation.map(item => (
                         <Menu as="div" key={item.title} className="relative inline-block text-left font-semibold xl:mr-10">
                             <div>
                                 <Menu.Button className=" py-2.5 text-sm leading-5 w-24 xl:w-full text-center  rounded-lg font-medium text-gray-100
-                                  focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-center">
+                                  focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-start">
                                     {item.title}      <div><i className="fa fa-angle-down ml-2" aria-hidden="true"></i></div>
                                 </Menu.Button>
                             </div>
@@ -164,7 +164,7 @@ const Trident = () => {
                             <Link key={item.name} href={item.href}>
                                 {/* <a  className="relative inline-block text-left font-semibold  w-24 xl:w-full text-center"> */}
                                 <div className=" py-2.5 text-sm leading-5  rounded-lg font-medium text-gray-100
-                                  focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-center">
+                                  focus: ring-offset-2 ring-offset-blue-400 ring-white ring-opacity-90 flex justify-start">
                                     {item.name}
                                     {/* </a> */}
                                 </div>
